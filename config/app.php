@@ -1,5 +1,7 @@
 <?php
 
+use App\Constants\SupportedCurrencies;
+
 return [
 
     /*
@@ -39,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -122,6 +124,8 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+
+    'currency' => env('APP_CURRENCY_CODE', null),
 
     /*
     |--------------------------------------------------------------------------

@@ -24,7 +24,7 @@
                         <tr>
                             <td>{{ $product->code }}</td>
                             <td>{{ $product->name }}</td>
-                            <td>{{ $product->price }}</td>
+                            <td>{{ $product->getFormattedPrice() }}</td>
                             <td>{{ $product->stock }}</td>
                         </tr>
                     @endforeach
